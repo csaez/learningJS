@@ -1,0 +1,78 @@
+body {
+    font-family: monospace;
+    font-size: 2em;
+    line-height: 1.5;
+    background-color: #ddd;
+    color: #333;
+    margin: 20px;
+    margin-bottom: 1.5;
+}
+h1 {font-size: 1.3em;}
+
+.input {
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid #999;
+    padding: 0 3px 0 3px;
+    color: #aaa;
+    font-style: italic;
+}
+
+.widget{
+    background-color: #333;
+    display: table-cell;
+    white-space: nowrap;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    position: relative;
+    font-size: 1em;
+    border-radius: 10px;
+}
+/* creates triangle */
+.widget:after {
+    content: "";
+    display: block; /* reduce the damage in FF3.0 */
+    position: absolute;
+    bottom: -15px;
+    left: 100px;
+    width: 0;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #333 transparent;
+}
+
+.widget ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 3px 0 3px;
+    display: inline-block;
+    color: #111;
+    background-image: linear-gradient(#555, #ddd 20%, #fff 50%, #ddd 80%, #555 );
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    border-left: 3px solid #222;
+    border-right: 3px solid #222;
+    min-width: 80px;
+    height: 7.5em;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.widget .selector{
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 3px;
+    z-index: 10;
+    min-height: 1.5em;
+    padding: 5px;
+    position: absolute;
+    margin-top: -4.8em;
+    margin-left: -1%;
+    width: 95%;
+    display: block;
+}
+
+.widget .separator {
+    color: #222;
+    font-weight: 900;
+}
